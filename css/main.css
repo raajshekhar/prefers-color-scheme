@@ -33,7 +33,3 @@ body {
     content: 'Light'
   }
 }
-
-h1::after {
-  content: 'No data found'
-}
