@@ -1,0 +1,39 @@
+body {
+  color: var(--color);
+  background-color: var(--background-color);
+  height: 100vh;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  transition: background-color, color 1s;
+}
+
+.container {
+  width: 80%;
+  background: var(--panel-bg);
+  border-radius: 40px;
+  padding: 4em;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+
+@media(prefers-color-scheme: dark){
+  h1::after {
+    content: 'Dark'
+  }
+}
+
+
+@media(prefers-color-scheme: light){
+  h1::after {
+    content: 'Light'
+  }
+}
+
+h1::after {
+  content: 'No data found'
+}
